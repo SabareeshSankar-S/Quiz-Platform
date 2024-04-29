@@ -16,7 +16,8 @@ public class Student{
 	private int regNo;
 	private String email;
 	private String gender;
-
+	private int score;
+	
 	public Student() {
 
 	}
@@ -53,5 +54,12 @@ public class Student{
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
+	public int getScore() {
+		return score;
+	}
+	public void setScore(int score) {
+		this.score = score;
+	}
+	
 
 }

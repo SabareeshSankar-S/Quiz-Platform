@@ -2,12 +2,9 @@ package com.ecs.quizapp.model;
 
 import java.util.Random;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
@@ -23,6 +20,13 @@ public class Page1Data {
 		this.science = science;
 		this.literature = literature;
 		this.mathematics = mathematics;
+	}
+
+	@Override
+	public String toString() {
+		return "Page1Data [questionId=" + questionId + ", student=" + student + ", geography=" + geography
+				+ ", history=" + history + ", science=" + science + ", literature=" + literature + ", mathematics="
+				+ mathematics + "]";
 	}
 
 	public Page1Data() {

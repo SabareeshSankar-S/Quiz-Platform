@@ -27,21 +27,14 @@
 		
 			<form action="/">
 						 <h1>Winner:</h1><br><br>
-				   		 <div th:if="${student != null}" style="background-color: white;padding:20px 20px 0px 90px">
-						        <h5 >Name: <p th:text="${student.name}" style="display: inline"></p>
-						        <h5>Roll Number: <p th:text="${student.regNo}" style="display: inline"></p>
-						        <h5>Email:<p th:text="${student.email}" style="display: inline"></p>
-						        <h5>Gender: <p th:text="${student.gender}" style="display: inline"></p><br><br>
-				   		 </div>
-				    	 <div th:unless="${student != null}">
-				         		<h5><p th:text="${errorMessage}"></p>
-				   		 </div>
-		
-						<input type="submit"  class="button" style="margin-top:20px" value="Home">
-			</form>
-		
+				   			<div style="background-color:graytext;color:white;padding-left: 170px;padding-top: 30px;padding-bottom: 30px">
+								  <h5 >My score: <p th:text="${myMarks}" style="display: inline"></p>
+								  <h5 >Top score: <p th:text="${winnerMarks}" style="display: inline"></p><br><br>
+						    </div>   
+	
+						<input type="submit"  class="button" style="margin-top:20px" value="Retake">
+			</form>	
 		</aside>
-
 </body>
 
 </html>
